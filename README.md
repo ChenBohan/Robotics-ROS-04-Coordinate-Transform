@@ -30,12 +30,21 @@ void poseCallback(const turtlesim::PoseConstPtr& msg)
 }
 ```
 
-The ``Quaternion`` implements quaternion to perform linear algebra rotations in combination with Matrix3x3, Vector3 and Transform.
+- The ``Quaternion`` implements quaternion to perform linear algebra rotations in combination with Matrix3x3, Vector3 and Transform.
 
+- Set the quaternion using fixed axis RPY.
 ```cpp
-void 	setRPY (const tfScalar &roll, const tfScalar &pitch, const tfScalar &yaw)
+void setRPY (const tfScalar &roll, const tfScalar &pitch, const tfScalar &yaw)
 ```
-Set the quaternion using fixed axis RPY.
+
+- StampedTransform
+```
+tf::StampedTransform::StampedTransform	(	const tf::Transform & 	input,
+const ros::Time & 	timestamp,
+const std::string & 	frame_id,
+const std::string & 	child_frame_id 
+)	
+```
 
 ### TF listener
 

@@ -2,7 +2,10 @@
 ROS course on Shenlanxueyuan.com
 
 More:
+
 [ROS探索总结（二十二）——设置机器人的tf变换](http://www.guyuehome.com/355?replytocom=47816)
+
+[Setting up your robot using tf](http://wiki.ros.org/navigation/Tutorials/RobotSetup/TF)
 
 ## TF
 

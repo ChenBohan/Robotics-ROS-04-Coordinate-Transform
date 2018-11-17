@@ -48,6 +48,12 @@ const std::string & 	frame_id,
 const std::string & 	child_frame_id 
 )	
 ```
+Sending a transform with a TransformBroadcaster requires five arguments. 
+1. First, we pass in the rotation transform, which is specified by a btQuaternion for any rotation that needs to occur between the two coordinate frames. 
+2. Second, a btVector3 for any translation that we'd like to apply. 
+3. Third, we need to give the transform being published a timestamp, we'll just stamp it with ros::Time::now(). 
+4. Fourth, we need to pass the name of the parent node of the link we're creating.
+5. Fifth, we need to pass the name of the child node of the link we're creating, in this case "base_laser."
 
 ### TF listener
 
